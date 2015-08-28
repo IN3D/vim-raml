@@ -25,6 +25,31 @@ You'll notice several changes:
    - Data types e.g. ```type: integer```. Supports all RAML datatypes. string, number, integer, date, boolean, and file.
    - Route definitions: these include ```/posts:``` or ```/{id}:```
 
+Installation
+---
+vim-raml doesn't have any strange or esoteric requirements.
+Provided you're using Vundle, Pathogen or any of the other standard Vim plugin managers. You can install vim-raml exactly how you'd expect.
+
+For completeness, to install via Vundle just add the following into your .vimrc with your other plugins
+```viml
+Plugin '.../.../'
+Plugin 'IN3D/vim-raml'
+Plugin '.../.../'
+```
+Then run:
+```
+:source %
+:PluginInstall
+```
+
+Or for Pathogen:
+```bash
+cd ~/.vim/bundle
+git clone https://github.com/IN3D/vim-raml.git
+```
+And Pathogen should pick it up the next time Vim is started.
+
+
 Questions, suggestions, and issues
 ---
 If you have a question, suggestion, or have found an issue with vim-raml. The best way to bring it to my attention is to open an issue at [https://github.com/IN3D/vim-raml/issues](https://github.com/IN3D/vim-raml/issues).
