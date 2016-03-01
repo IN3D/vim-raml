@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:    RAML (RESTful API Modeling Language)
 " Maintainer:  Eric Hopkins <eric.on.tech@gmail.com>
-" Last Change: 2015-08-28
+" Last Change: 2016-02-29
 
 if exists("b:current_syntax")
   finish
@@ -26,7 +26,7 @@ syn match   ramlAlias           '\*.\+'
 syn match   ramlDelimiter       '[-,:]'
 syn match   ramlBlock           '[\[\]{}>|]'
 syn match   ramlOperator        '[?+-]'
-syn match   ramlKey             '\S\+\ze\s*:'
+syn match   ramlKey             '\h\+\ze\s*:'
 syn match   ramlKey             '\w\+\(\s\+\w\+\)*\ze\s*:'
 syn match   routeKey            '\/\w\+\(\s\+\w\+\)*\ze\s*:'
 syn match   routeKey            'application\/\w\+\ze\s*:'
