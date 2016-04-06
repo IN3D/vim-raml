@@ -33,10 +33,10 @@ syn match   routeKey            'application\/\w\+\ze\s*:'
 syn match   routeParamKey       '\/{\w\+}*\ze\s*:'
 
 syn region  ramlString          matchgroup=ramlStringDelimiter
-                                \ start=+"+ skip=+\\"+ end=+"+
+                                \ start=+\s"+ skip=+\\"+ end=+"+
                                 \ contains=ramlEscape
 syn region  ramlString          matchgroup=ramlStringDelimiter
-                                \ start=+'+ skip=+''+ end=+'+
+                                \ start=+\s'+ skip=+''+ end=+'+
                                 \ contains=ramlStringEscape
 syn region  ramlParameter       matchgroup=ramlParameterDelimiter
                                 \ start=+<<+ skip=+''+ end=+>>+
