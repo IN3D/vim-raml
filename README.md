@@ -32,9 +32,7 @@ Provided you're using Vundle, Pathogen or any of the other standard Vim plugin m
 
 For completeness, to install via Vundle just add the following into your .vimrc with your other plugins
 ```viml
-Plugin '.../.../'
 Plugin 'IN3D/vim-raml'
-Plugin '.../.../'
 ```
 Then run:
 ```
